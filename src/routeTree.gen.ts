@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as SalarioRouteImport } from './routes/salario'
 import { Route as RecomendacoesRouteImport } from './routes/recomendacoes'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as IndexRouteImport } from './routes/index'
@@ -17,6 +18,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const SobreRoute = SobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SalarioRoute = SalarioRouteImport.update({
+  id: '/salario',
+  path: '/salario',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RecomendacoesRoute = RecomendacoesRouteImport.update({
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/dashboard': typeof DashboardRoute
   '/recomendacoes': typeof RecomendacoesRoute
+  '/salario': typeof SalarioRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/dashboard': typeof DashboardRoute
   '/recomendacoes': typeof RecomendacoesRoute
+  '/salario': typeof SalarioRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/dashboard': typeof DashboardRoute
   '/recomendacoes': typeof RecomendacoesRoute
+  '/salario': typeof SalarioRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/dashboard' | '/recomendacoes' | '/sobre'
+  fullPaths: '/' | '/dashboard' | '/recomendacoes' | '/salario' | '/sobre'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/dashboard' | '/recomendacoes' | '/sobre'
-  id: '__root__' | '/' | '/dashboard' | '/recomendacoes' | '/sobre'
+  to: '/' | '/dashboard' | '/recomendacoes' | '/salario' | '/sobre'
+  id: '__root__' | '/' | '/dashboard' | '/recomendacoes' | '/salario' | '/sobre'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DashboardRoute: typeof DashboardRoute
   RecomendacoesRoute: typeof RecomendacoesRoute
+  SalarioRoute: typeof SalarioRoute
   SobreRoute: typeof SobreRoute
 }
 
@@ -76,6 +86,13 @@ declare module '@tanstack/react-router' {
       path: '/sobre'
       fullPath: '/sobre'
       preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/salario': {
+      id: '/salario'
+      path: '/salario'
+      fullPath: '/salario'
+      preLoaderRoute: typeof SalarioRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/recomendacoes': {
@@ -106,17 +123,9 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DashboardRoute: DashboardRoute,
   RecomendacoesRoute: RecomendacoesRoute,
+  SalarioRoute: SalarioRoute,
   SobreRoute: SobreRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}

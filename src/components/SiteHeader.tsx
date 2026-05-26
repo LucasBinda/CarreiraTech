@@ -24,6 +24,9 @@ export function SiteHeader() {
           <Link to="/recomendacoes" className="rounded-md px-3 py-2 text-muted-foreground transition-colors hover:text-foreground" activeProps={{ className: "text-foreground bg-secondary" }}>
             Recomendações
           </Link>
+          <Link to="/salario" className="rounded-md px-3 py-2 text-muted-foreground transition-colors hover:text-foreground" activeProps={{ className: "text-foreground bg-secondary" }}>
+            Previsão Salarial
+          </Link>
           <Link to="/sobre" className="rounded-md px-3 py-2 text-muted-foreground transition-colors hover:text-foreground" activeProps={{ className: "text-foreground bg-secondary" }}>
             Sobre
           </Link>
