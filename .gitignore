@@ -32,4 +32,4 @@ dist-ssr
 *.sw?
 .test/
 analytics/data/*
-__pycache__/
+**/__pycache__/
