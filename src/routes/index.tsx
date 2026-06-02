@@ -3,7 +3,7 @@ import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Sparkles, BarChart3, Target, Brain, TrendingUp } from "lucide-react";
-import { JOBS } from "@/data/jobs";
+import { JOBS } from "../data/jobs";
 import { topSkills, avgSalaryByArea } from "@/lib/analytics";
 
 export const Route = createFileRoute("/")({

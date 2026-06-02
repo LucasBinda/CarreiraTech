@@ -3,7 +3,7 @@
 // Features: senioridade (ordinal), área (one-hot), modelo de trabalho (one-hot),
 // nº de skills (numérica) e indicadores binários das top-skills.
 
-import { JOBS, ALL_AREAS, type Seniority, type WorkModel } from "@/data/jobs";
+import { JOBS, ALL_AREAS, type Seniority, type WorkModel } from "../data/jobs";
 
 const SENIORITY_RANK: Record<Seniority, number> = {
   "Estágio": 0, "Júnior": 1, "Pleno": 2, "Sênior": 3,

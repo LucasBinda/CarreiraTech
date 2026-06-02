@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
 import { Card } from "@/components/ui/card";
-import { JOBS } from "@/data/jobs";
+import { JOBS } from "../data/jobs";
 import { avgSalaryByArea, topSkills, jobsBySeniority, jobsByWorkModel } from "@/lib/analytics";
 import { Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis, Legend } from "recharts";
 import { Briefcase, DollarSign, MapPin, Users } from "lucide-react";

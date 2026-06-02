@@ -1,6 +1,7 @@
 // Dataset simulado baseado em padrões reais do mercado de TI brasileiro
 // (inspirado em datasets do Kaggle como "Brazil Tech Jobs" e "LinkedIn Jobs")
-
+// TODO : this shit was on src/data/ substituir por algo melhor
+// TODO : pegar um dataset maior e filtrar os dados para gerar um conjunto mais rico e realista
 export type Seniority = "Estágio" | "Júnior" | "Pleno" | "Sênior";
 export type WorkModel = "Remoto" | "Híbrido" | "Presencial";
 

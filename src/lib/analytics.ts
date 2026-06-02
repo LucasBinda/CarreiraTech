@@ -1,4 +1,4 @@
-import { JOBS, type Job, type Seniority } from "@/data/jobs";
+import { JOBS, type Job, type Seniority } from "../data/jobs";
 
 export function avgSalaryByArea() {
   const map = new Map<string, number[]>();

@@ -1,0 +1,31 @@
+{
+    "ai_usage": {
+        "Yes, I use AI tools daily": 9898,
+        "Yes, I use AI tools weekly": 3642,
+        "No, and I don't plan to": 2963,
+        "Yes, I use AI tools monthly or infrequently": 2639,
+        "No, but I plan to soon": 894
+    },
+    "top_countries_using_ai": {
+        "United States of America": 3888,
+        "Germany": 1939,
+        "United Kingdom of Great Britain and Northern Ireland": 1281,
+        "France": 910,
+        "India": 890,
+        "Canada": 794,
+        "Ukraine": 621,
+        "Brazil": 544,
+        "Netherlands": 540,
+        "Italy": 518,
+        "Poland": 516,
+        "Spain": 507,
+        "Australia": 477,
+        "Sweden": 426,
+        "Switzerland": 363,
+        "Czech Republic": 319,
+        "Austria": 254,
+        "Denmark": 199,
+        "Belgium": 192,
+        "Portugal": 184
+    }
+}

@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ALL_SKILLS, ALL_AREAS, type Seniority } from "@/data/jobs";
+import { ALL_SKILLS, ALL_AREAS, type Seniority } from "../data/jobs";
 import { recommendJobs, type Profile } from "@/lib/analytics";
 import { Sparkles, Check, MapPin, Building2, X, TrendingUp } from "lucide-react";
 

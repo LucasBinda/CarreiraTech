@@ -1,0 +1,20 @@
+{
+    "rows": 20614,
+    "duplicates_remaining": 0,
+    "duplicates_removed": 2,
+    "countries": 163,
+    "dev_types": 32,
+    "languages": 42,
+    "salary_mean": 81408.13587852915,
+    "salary_median": 73408.0,
+    "salary_min": 1.0,
+    "salary_max": 245055.0,
+    "salary_std": 56161.0326565678,
+    "outliers_removed": 963,
+    "invalid_experience_removed": 1890,
+    "invalid_records": {
+        "workexp_greater_than_yearscode": 0,
+        "workexp_above_60_years": 5,
+        "salary_above_500k": 0
+    }
+}

@@ -1,5 +1,4 @@
 import { createRouter, useRouter } from "@tanstack/react-router";
-import { routeTree } from "./routeTree.gen";
 
 function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   const router = useRouter();
@@ -54,7 +53,10 @@ function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => vo
   );
 }
 
-export const getRouter = () => {
+export const getRouter = async () => {
+  const mod = await import("./routeTree.gen");
+  const routeTree = mod.routeTree ?? mod.default;
+
   const router = createRouter({
     routeTree,
     context: {},
