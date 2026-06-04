@@ -7,3 +7,5 @@ seaborn
 joblib
 seaborn
 XGBoost
+fastapi
+uvicorn

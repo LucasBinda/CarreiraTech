@@ -33,3 +33,4 @@ dist-ssr
 .test/
 analytics/data/*
 **/__pycache__/
+**__init__.py/
