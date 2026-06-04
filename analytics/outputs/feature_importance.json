@@ -1,0 +1,402 @@
+[
+    {
+        "feature": "COUNTRY_United States of America",
+        "importance": 0.19947081804275513
+    },
+    {
+        "feature": "COUNTRY_Switzerland",
+        "importance": 0.02908690646290779
+    },
+    {
+        "feature": "COUNTRY_India",
+        "importance": 0.026826893910765648
+    },
+    {
+        "feature": "COUNTRY_United Kingdom of Great Britain and Northern Ireland",
+        "importance": 0.022596824914216995
+    },
+    {
+        "feature": "COUNTRY_Brazil",
+        "importance": 0.017662756145000458
+    },
+    {
+        "feature": "COUNTRY_Ukraine",
+        "importance": 0.01740337163209915
+    },
+    {
+        "feature": "COUNTRY_Israel",
+        "importance": 0.01695326901972294
+    },
+    {
+        "feature": "COUNTRY_Australia",
+        "importance": 0.015012758783996105
+    },
+    {
+        "feature": "COUNTRY_Canada",
+        "importance": 0.01440854836255312
+    },
+    {
+        "feature": "WorkExp",
+        "importance": 0.012408425100147724
+    },
+    {
+        "feature": "COUNTRY_Germany",
+        "importance": 0.011686175130307674
+    },
+    {
+        "feature": "COUNTRY_Ireland",
+        "importance": 0.010451210662722588
+    },
+    {
+        "feature": "LANG_PHP",
+        "importance": 0.010030296631157398
+    },
+    {
+        "feature": "COUNTRY_Denmark",
+        "importance": 0.009787448681890965
+    },
+    {
+        "feature": "COUNTRY_Pakistan",
+        "importance": 0.008233954198658466
+    },
+    {
+        "feature": "DEVTYPE_Student",
+        "importance": 0.008076838217675686
+    },
+    {
+        "feature": "COUNTRY_Bangladesh",
+        "importance": 0.007541672792285681
+    },
+    {
+        "feature": "COUNTRY_Netherlands",
+        "importance": 0.007505151443183422
+    },
+    {
+        "feature": "COUNTRY_Mexico",
+        "importance": 0.007330008316785097
+    },
+    {
+        "feature": "DATABASE_Snowflake",
+        "importance": 0.007174124009907246
+    },
+    {
+        "feature": "DEVTYPE_Academic researcher",
+        "importance": 0.007131659891456366
+    },
+    {
+        "feature": "DATABASE_Redis",
+        "importance": 0.007121623493731022
+    },
+    {
+        "feature": "COUNTRY_Norway",
+        "importance": 0.006966885644942522
+    },
+    {
+        "feature": "COUNTRY_Singapore",
+        "importance": 0.006932737771421671
+    },
+    {
+        "feature": "DEVTYPE_Engineering manager",
+        "importance": 0.006829495076090097
+    },
+    {
+        "feature": "LANG_Go",
+        "importance": 0.006744984071701765
+    },
+    {
+        "feature": "COUNTRY_Turkey",
+        "importance": 0.006289448123425245
+    },
+    {
+        "feature": "DEVTYPE_System administrator",
+        "importance": 0.006131202448159456
+    },
+    {
+        "feature": "COUNTRY_Colombia",
+        "importance": 0.006112267263233662
+    },
+    {
+        "feature": "COUNTRY_Indonesia",
+        "importance": 0.006057812366634607
+    },
+    {
+        "feature": "COUNTRY_Philippines",
+        "importance": 0.00589448306709528
+    },
+    {
+        "feature": "COUNTRY_Nigeria",
+        "importance": 0.005833938717842102
+    },
+    {
+        "feature": "FRAMEWORK_jQuery",
+        "importance": 0.005680807400494814
+    },
+    {
+        "feature": "DATABASE_MySQL",
+        "importance": 0.005293446592986584
+    },
+    {
+        "feature": "DATABASE_Dynamodb",
+        "importance": 0.005122342612594366
+    },
+    {
+        "feature": "COUNTRY_Argentina",
+        "importance": 0.005034518428146839
+    },
+    {
+        "feature": "COUNTRY_Belgium",
+        "importance": 0.004806864075362682
+    },
+    {
+        "feature": "DATABASE_Databricks SQL",
+        "importance": 0.004702464211732149
+    },
+    {
+        "feature": "DEVTYPE_Retired",
+        "importance": 0.00456924457103014
+    },
+    {
+        "feature": "EDLEVEL_Master’s degree (M.A., M.S., M.Eng., MBA, etc.)",
+        "importance": 0.004535979591310024
+    },
+    {
+        "feature": "DATABASE_Microsoft Access",
+        "importance": 0.004480845294892788
+    },
+    {
+        "feature": "COUNTRY_Egypt",
+        "importance": 0.004459913820028305
+    },
+    {
+        "feature": "COUNTRY_Austria",
+        "importance": 0.00430371705442667
+    },
+    {
+        "feature": "COUNTRY_Venezuela, Bolivarian Republic of...",
+        "importance": 0.00423803273588419
+    },
+    {
+        "feature": "LANG_Bash/Shell (all shells)",
+        "importance": 0.004221707116812468
+    },
+    {
+        "feature": "DEVTYPE_Senior executive (C-suite, VP, etc.)",
+        "importance": 0.003987905569374561
+    },
+    {
+        "feature": "COUNTRY_Nomadic",
+        "importance": 0.0038256216794252396
+    },
+    {
+        "feature": "DATABASE_PostgreSQL",
+        "importance": 0.0037604167591780424
+    },
+    {
+        "feature": "LANG_Visual Basic (.Net)",
+        "importance": 0.003716518171131611
+    },
+    {
+        "feature": "COUNTRY_Russian Federation",
+        "importance": 0.003678354201838374
+    },
+    {
+        "feature": "COUNTRY_Sri Lanka",
+        "importance": 0.0036669804248958826
+    },
+    {
+        "feature": "COUNTRY_South Africa",
+        "importance": 0.003620902542024851
+    },
+    {
+        "feature": "COUNTRY_Guatemala",
+        "importance": 0.0036113520618528128
+    },
+    {
+        "feature": "DATABASE_DuckDB",
+        "importance": 0.0035811178386211395
+    },
+    {
+        "feature": "DATABASE_MariaDB",
+        "importance": 0.0035588331520557404
+    },
+    {
+        "feature": "LANG_TypeScript",
+        "importance": 0.0034964364022016525
+    },
+    {
+        "feature": "COUNTRY_Malaysia",
+        "importance": 0.0033743511885404587
+    },
+    {
+        "feature": "LANG_Rust",
+        "importance": 0.003322646487504244
+    },
+    {
+        "feature": "LANG_COBOL",
+        "importance": 0.0032268764916807413
+    },
+    {
+        "feature": "COUNTRY_Kenya",
+        "importance": 0.0032252431847155094
+    },
+    {
+        "feature": "COUNTRY_Iran, Islamic Republic of...",
+        "importance": 0.0032062402460724115
+    },
+    {
+        "feature": "FRAMEWORK_React",
+        "importance": 0.003166748443618417
+    },
+    {
+        "feature": "COUNTRY_Viet Nam",
+        "importance": 0.003154331585392356
+    },
+    {
+        "feature": "LANG_Delphi",
+        "importance": 0.0031284962315112352
+    },
+    {
+        "feature": "COUNTRY_France",
+        "importance": 0.0031198218930512667
+    },
+    {
+        "feature": "DATABASE_Pocketbase",
+        "importance": 0.0031149424612522125
+    },
+    {
+        "feature": "DATABASE_Firebase Realtime Database",
+        "importance": 0.003109619952738285
+    },
+    {
+        "feature": "DATABASE_Microsoft SQL Server",
+        "importance": 0.00306000467389822
+    },
+    {
+        "feature": "COUNTRY_Chile",
+        "importance": 0.0030572807881981134
+    },
+    {
+        "feature": "COUNTRY_New Zealand",
+        "importance": 0.003052297979593277
+    },
+    {
+        "feature": "COUNTRY_United Arab Emirates",
+        "importance": 0.0030458688270300627
+    },
+    {
+        "feature": "DATABASE_Elasticsearch",
+        "importance": 0.003044380573555827
+    },
+    {
+        "feature": "COUNTRY_Italy",
+        "importance": 0.0030316065531224012
+    },
+    {
+        "feature": "COUNTRY_Lithuania",
+        "importance": 0.003008834784850478
+    },
+    {
+        "feature": "LANG_Scala",
+        "importance": 0.0030077025294303894
+    },
+    {
+        "feature": "COUNTRY_Peru",
+        "importance": 0.0029975720681250095
+    },
+    {
+        "feature": "DATABASE_Valkey",
+        "importance": 0.002943430095911026
+    },
+    {
+        "feature": "DEVTYPE_Architect, software or solutions",
+        "importance": 0.0029324584174901247
+    },
+    {
+        "feature": "DEVTYPE_AI/ML engineer",
+        "importance": 0.00292100734077394
+    },
+    {
+        "feature": "DEVTYPE_Developer, back-end",
+        "importance": 0.002897647675126791
+    },
+    {
+        "feature": "COUNTRY_Luxembourg",
+        "importance": 0.002891084412112832
+    },
+    {
+        "feature": "LANG_Ruby",
+        "importance": 0.002877078950405121
+    },
+    {
+        "feature": "EDLEVEL_Other (please specify):",
+        "importance": 0.002876345068216324
+    },
+    {
+        "feature": "EDLEVEL_Some college/university study without earning a degree",
+        "importance": 0.0028763364534825087
+    },
+    {
+        "feature": "DATABASE_BigQuery",
+        "importance": 0.00286520435474813
+    },
+    {
+        "feature": "COUNTRY_Portugal",
+        "importance": 0.002833528909832239
+    },
+    {
+        "feature": "DATABASE_Cosmos DB",
+        "importance": 0.0027426022570580244
+    },
+    {
+        "feature": "LANG_MicroPython",
+        "importance": 0.002738642506301403
+    },
+    {
+        "feature": "COUNTRY_Nepal",
+        "importance": 0.0027340957894921303
+    },
+    {
+        "feature": "COUNTRY_Taiwan",
+        "importance": 0.002706406405195594
+    },
+    {
+        "feature": "LANG_Mojo",
+        "importance": 0.002691601635888219
+    },
+    {
+        "feature": "COUNTRY_Armenia",
+        "importance": 0.0026445318944752216
+    },
+    {
+        "feature": "COUNTRY_Paraguay",
+        "importance": 0.002641664817929268
+    },
+    {
+        "feature": "DEVTYPE_Developer, QA or test",
+        "importance": 0.0026376540772616863
+    },
+    {
+        "feature": "FRAMEWORK_Phoenix",
+        "importance": 0.0026297594886273146
+    },
+    {
+        "feature": "DEVTYPE_Other (please specify):",
+        "importance": 0.0025989559944719076
+    },
+    {
+        "feature": "DATABASE_Datomic",
+        "importance": 0.002571255434304476
+    },
+    {
+        "feature": "DEVTYPE_Product manager",
+        "importance": 0.0025439902674406767
+    },
+    {
+        "feature": "FRAMEWORK_WordPress",
+        "importance": 0.002520608715713024
+    },
+    {
+        "feature": "FRAMEWORK_Nuxt.js",
+        "importance": 0.0025191400200128555
+    }
+]
