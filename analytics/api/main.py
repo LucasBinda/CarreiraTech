@@ -1,5 +1,7 @@
 from fastapi import FastAPI
+from pathlib import Path
 
+import json
 from .schemas import (
     SalaryPredictionRequest,
     SalaryPredictionResponse
@@ -7,6 +9,19 @@ from .schemas import (
 
 from .predictor import (
     predict_salary
+)
+
+BASE_DIR = (
+    Path(__file__)
+    .resolve()
+    .parent
+    .parent
+)
+
+METADATA_FILE = (
+    BASE_DIR
+    / "outputs"
+    / "metadata.json"
 )
 
 app = FastAPI(
@@ -31,6 +46,17 @@ def health():
         "status": "ok"
     }
 
+
+@app.get("/metadata")
+def metadata():
+
+    with open(
+        METADATA_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+
+        return json.load(file)
 
 @app.post(
     "/predict-salary",
