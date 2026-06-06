@@ -156,12 +156,35 @@ def predict_salary(
         [row]
     )
 
-    prediction = (
+    prediction = float(
         MODEL.predict(
             input_df
         )[0]
     )
 
-    return float(
+    confidence_factor = 0.15
+
+    salary_min = (
         prediction
+        * (1 - confidence_factor)
     )
+
+    salary_max = (
+        prediction
+        * (1 + confidence_factor)
+    )
+
+    return {
+        "predictedSalary": round(
+            prediction,
+            2
+        ),
+        "salaryMin": round(
+            salary_min,
+            2
+        ),
+        "salaryMax": round(
+            salary_max,
+            2
+        )
+    }

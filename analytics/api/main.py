@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 
 import json
@@ -29,6 +30,16 @@ app = FastAPI(
     version="1.0.0"
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:8080",
+        "http://127.0.0.1:8080",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def root():
@@ -63,19 +74,11 @@ def metadata():
     response_model=
     SalaryPredictionResponse
 )
-def predict(
-    request:
+def predict_salary_endpoint(
+    payload:
     SalaryPredictionRequest
 ):
 
-    salary = predict_salary(
-        request
+    return predict_salary(
+        payload
     )
-
-    return {
-        "predictedSalary":
-        round(
-            salary,
-            2
-        )
-    }

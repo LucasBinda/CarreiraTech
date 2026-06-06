@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as SalarioApiRouteImport } from './routes/salario-api'
 import { Route as SalarioRouteImport } from './routes/salario'
 import { Route as RecomendacoesRouteImport } from './routes/recomendacoes'
 import { Route as DashboardRouteImport } from './routes/dashboard'
@@ -18,6 +19,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const SobreRoute = SobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SalarioApiRoute = SalarioApiRouteImport.update({
+  id: '/salario-api',
+  path: '/salario-api',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SalarioRoute = SalarioRouteImport.update({
@@ -46,6 +52,7 @@ export interface FileRoutesByFullPath {
   '/dashboard': typeof DashboardRoute
   '/recomendacoes': typeof RecomendacoesRoute
   '/salario': typeof SalarioRoute
+  '/salario-api': typeof SalarioApiRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRoutesByTo {
@@ -53,6 +60,7 @@ export interface FileRoutesByTo {
   '/dashboard': typeof DashboardRoute
   '/recomendacoes': typeof RecomendacoesRoute
   '/salario': typeof SalarioRoute
+  '/salario-api': typeof SalarioApiRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRoutesById {
@@ -61,14 +69,34 @@ export interface FileRoutesById {
   '/dashboard': typeof DashboardRoute
   '/recomendacoes': typeof RecomendacoesRoute
   '/salario': typeof SalarioRoute
+  '/salario-api': typeof SalarioApiRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/dashboard' | '/recomendacoes' | '/salario' | '/sobre'
+  fullPaths:
+    | '/'
+    | '/dashboard'
+    | '/recomendacoes'
+    | '/salario'
+    | '/salario-api'
+    | '/sobre'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/dashboard' | '/recomendacoes' | '/salario' | '/sobre'
-  id: '__root__' | '/' | '/dashboard' | '/recomendacoes' | '/salario' | '/sobre'
+  to:
+    | '/'
+    | '/dashboard'
+    | '/recomendacoes'
+    | '/salario'
+    | '/salario-api'
+    | '/sobre'
+  id:
+    | '__root__'
+    | '/'
+    | '/dashboard'
+    | '/recomendacoes'
+    | '/salario'
+    | '/salario-api'
+    | '/sobre'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -76,6 +104,7 @@ export interface RootRouteChildren {
   DashboardRoute: typeof DashboardRoute
   RecomendacoesRoute: typeof RecomendacoesRoute
   SalarioRoute: typeof SalarioRoute
+  SalarioApiRoute: typeof SalarioApiRoute
   SobreRoute: typeof SobreRoute
 }
 
@@ -86,6 +115,13 @@ declare module '@tanstack/react-router' {
       path: '/sobre'
       fullPath: '/sobre'
       preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/salario-api': {
+      id: '/salario-api'
+      path: '/salario-api'
+      fullPath: '/salario-api'
+      preLoaderRoute: typeof SalarioApiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/salario': {
@@ -124,6 +160,7 @@ const rootRouteChildren: RootRouteChildren = {
   DashboardRoute: DashboardRoute,
   RecomendacoesRoute: RecomendacoesRoute,
   SalarioRoute: SalarioRoute,
+  SalarioApiRoute: SalarioApiRoute,
   SobreRoute: SobreRoute,
 }
 export const routeTree = rootRouteImport

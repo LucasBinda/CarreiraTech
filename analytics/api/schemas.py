@@ -25,3 +25,5 @@ class SalaryPredictionResponse(
     BaseModel
 ):
     predictedSalary: float
+    salaryMin: float
+    salaryMax: float
