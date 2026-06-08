@@ -133,15 +133,22 @@ function SalarioV2Page() {
       <SiteHeader />
 
       <main className="flex-1 max-w-4xl mx-auto w-full px-6 py-12">
-        <div className="mb-8">
+        <div className="mb-4">
           <h1 className="text-4xl font-bold">Modelo Preditivo</h1>
 
           <p className="text-muted-foreground mt-2">
-            Previsão salarial utilizando XGBoost Regressor treinado com dados reais da Stack
-            Overflow Developer Survey.
+            Previsão salarial utilizando XGBoost Regressor treinado com dados reais da{" "}
+            <a
+              href="https://github.com/StackExchange/Survey/tree/main/packages/archive/2025"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Stack Overflow Developer Survey
+            </a>
           </p>
         </div>
-        <div className="grid sm:grid-cols-5 gap-4 mb-10">
+        <div className="grid sm:grid-cols-5 gap-4 mb-4">
           {[
             {
               label: "R² (teste)",
@@ -415,7 +422,7 @@ function SalarioV2Page() {
 
                   <div className="text-5xl font-bold mt-3">
                     US${" "}
-                    {prediction.predictedSalary.toLocaleString("en-US", {
+                    {(prediction.predictedSalary / 12).toLocaleString("en-US", {
                       maximumFractionDigits: 0,
                     })}
                   </div>
@@ -428,12 +435,12 @@ function SalarioV2Page() {
 
                   <div className="text-xl font-semibold mt-2">
                     US${" "}
-                    {prediction.salaryMin.toLocaleString("en-US", {
+                    {(prediction.salaryMin / 12).toLocaleString("en-US", {
                       maximumFractionDigits: 0,
                     })}
                     {" - "}
                     US${" "}
-                    {prediction.salaryMax.toLocaleString("en-US", {
+                    {(prediction.salaryMax / 12).toLocaleString("en-US", {
                       maximumFractionDigits: 0,
                     })}
                   </div>
