@@ -16,6 +16,17 @@ dist-ssr
 .nitro
 *.local
 
+
+# prettier ignore
+node_modules
+dist
+.output
+.vinxi
+pnpm-lock.yaml
+package-lock.json
+routeTree.gen.ts
+
+
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars
@@ -34,3 +45,4 @@ dist-ssr
 analytics/data/*
 **/__pycache__/
 **__init__.py/
+.test/*
