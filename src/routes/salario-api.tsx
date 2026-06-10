@@ -25,7 +25,9 @@ import {
 export const Route = createFileRoute("/salario-api")({
   component: SalarioV2Page,
 });
-
+import topLanguagesChart from "@/assets/charts/top_languages.png";
+import topCountriesChart from "@/assets/charts/top_countries.png";
+import salaryVsExperienceChart from "@/assets/charts/salary_vs_experience.png";
 function SalarioV2Page() {
   const [metadata, setMetadata] = useState<Metadata | null>(null);
 
@@ -157,12 +159,12 @@ function SalarioV2Page() {
             },
             {
               label: "MAE",
-              value: "US$ 25.5k",
+              value: "US$ 2.122",
               hint: "Erro absoluto médio",
             },
             {
               label: "RMSE",
-              value: "US$ 35.7k",
+              value: "US$ 2.974",
               hint: "Raiz do erro quadrático",
             },
             {
@@ -447,16 +449,100 @@ function SalarioV2Page() {
                 </div>
 
                 <div className="border-t pt-4 text-sm text-muted-foreground">
-                  Previsão gerada pelo modelo XGBoost treinado com 20.614 profissionais de
-                  tecnologia.
+                  Modelo treinado para prever renda anual. Os resultados são convertidos para renda
+                  mensal para facilitar a interpretação pelo usuário.
                 </div>
               </div>
             )}
           </Card>
         </div>
-      </main>
+        <section className="mt-16">
+          <div className="mb-10">
+            <div className="text-xs uppercase tracking-widest text-accent">
+              Análise Exploratória
+            </div>
 
-      <SiteFooter />
+            <h2 className="mt-2 text-3xl font-bold">Dataset Stack Overflow Survey</h2>
+
+            <p className="mt-3 text-muted-foreground max-w-3xl">
+              Visualizações utilizadas durante a análise exploratória e treinamento do modelo
+              XGBoost. Os gráficos ajudam a compreender os padrões salariais observados entre
+              profissionais de tecnologia.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-6">
+            <Card className="p-6 bg-card border-border/50">
+              <h3 className="font-semibold mb-1">Salário x Experiência</h3>
+
+              <p className="text-xs text-muted-foreground mb-5">
+                Relação entre anos de experiência profissional e remuneração observada no dataset.
+              </p>
+
+              <img
+                src={salaryVsExperienceChart}
+                alt="Salary vs Experience"
+                className="w-full rounded-lg border border-border"
+              />
+            </Card>
+
+            <Card className="p-6 bg-card border-border/50">
+              <h3 className="font-semibold mb-1">Linguagens com maiores salários médios</h3>
+
+              <p className="text-xs text-muted-foreground mb-5">
+                Comparação entre tecnologias e remuneração média observada na pesquisa.
+              </p>
+
+              <img
+                src={topLanguagesChart}
+                alt="Top Languages"
+                className="w-full rounded-lg border border-border"
+              />
+            </Card>
+
+            <Card className="p-6 bg-card border-border/50">
+              <h3 className="font-semibold mb-1">Países com maiores salários médios</h3>
+
+              <p className="text-xs text-muted-foreground mb-5">
+                Diferenças salariais entre mercados internacionais de tecnologia.
+              </p>
+
+              <img
+                src={topCountriesChart}
+                alt="Top Countries"
+                className="w-full rounded-lg border border-border"
+              />
+            </Card>
+
+            <Card className="p-6 bg-card/60 border-border/50">
+              <h3 className="font-semibold text-accent">Principais conclusões</h3>
+
+              <div className="mt-4 space-y-3 text-sm text-muted-foreground leading-relaxed">
+                <p>
+                  Profissionais com mais anos de experiência apresentam tendência de crescimento
+                  salarial consistente.
+                </p>
+
+                <p>
+                  Algumas linguagens possuem remuneração média significativamente maior, refletindo
+                  demanda e especialização do mercado.
+                </p>
+
+                <p>
+                  Países desenvolvidos concentram as maiores faixas salariais da pesquisa,
+                  evidenciando diferenças econômicas globais.
+                </p>
+
+                <p>
+                  Esses padrões foram utilizados pelo modelo XGBoost para realizar as previsões
+                  salariais apresentadas nesta página.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </section>
+        <SiteFooter />
+      </main>
     </div>
   );
 }
