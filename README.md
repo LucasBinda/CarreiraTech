@@ -1,4 +1,4 @@
-# ML-Carreira
+# CarreiraTech
 
 Plataforma web para análise do mercado de tecnologia, recomendação de vagas e previsão salarial utilizando Machine Learning.
 
