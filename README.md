@@ -2,6 +2,10 @@
 
 Plataforma web para análise do mercado de tecnologia, recomendação de vagas e previsão salarial utilizando Machine Learning.
 
+## Apresentação
+
+https://youtu.be/q1Q603Zaprc
+
 ## Objetivo
 
 O ML-Carreira foi desenvolvido com o objetivo de auxiliar estudantes e profissionais da área de tecnologia a compreender melhor o mercado de trabalho, identificar oportunidades compatíveis com seu perfil e estimar faixas salariais utilizando Inteligência Artificial.
